@@ -184,6 +184,8 @@ const App = (function(WeatherCtrl, UICtrl) {
 
   setLocation = function(location) {
     UICtrl.changeDay(currDate, location.coords.latitude, location.coords.longitude);
+    UICtrl.latitude = location.coords.latitude;
+    UICtrl.longitude = location.coords.longitude;
   }
   
 
