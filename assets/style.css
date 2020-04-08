@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#weather-img {
+  max-width: 50px;
+}
+
+#author {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.custom-btn {
+  color: white;
+  font-weight: 800;
+  border: 1px solid white;
+}
+
+.modal-btn-submit {
+  color: black;
+  font-weight: 800;
+  border: 1px solid black;
+}
+
+button .modal-btn:hover {
+  color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
