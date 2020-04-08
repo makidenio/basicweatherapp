@@ -15,13 +15,6 @@ body {
   max-width: 50px;
 }
 
-#author {
-  color: white;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-}
-
 .custom-btn {
   color: white;
   font-weight: 800;
