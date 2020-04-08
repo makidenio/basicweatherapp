@@ -177,12 +177,21 @@ const App = (function(WeatherCtrl, UICtrl) {
     })
 
   }
+
+  getUsersLocation = function() {
+    navigator.geolocation.getCurrentPosition(setLocation)
+  }
+
+  setLocation = function(location) {
+    UICtrl.changeDay(currDate, location.coords.latitude, location.coords.longitude);
+  }
   
 
   init = function() {
+    UICtrl.changeDay(currDate);
+    getUsersLocation();
     UICtrl.checkControlsShow(currDate);
     loadEventListeners();
-    UICtrl.changeDay(currDate);
   }
 
   // Public methods
